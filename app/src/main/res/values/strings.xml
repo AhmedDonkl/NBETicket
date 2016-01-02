@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">NBE Ticket</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_start">Start</string>
+    <string name="title_activity_sign_up">SignUp</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_activity_select_branch">SelectBranch</string>
+    <string name="title_activity_select__date">Select_Date</string>
+    <string name="title_activity_view__ticket">View_Ticket</string>
+    <string name="title_activity_my__tickets">My_Tickets</string>
+</resources>

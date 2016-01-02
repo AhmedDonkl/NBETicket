@@ -1,0 +1,129 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2">
+
+
+    <ImageView
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/logo"
+        android:id="@+id/logo"
+        />
+
+    <TextView
+        android:layout_below="@+id/logo"
+        android:background="@drawable/background3"
+        android:id="@+id/select_branch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="36dp"
+        android:text="Select Your Date"
+        android:textColor="#ffff971f" />
+
+
+        <LinearLayout
+            android:layout_above="@+id/date_submit"
+            android:layout_below="@+id/select_branch"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+
+            <ImageView
+                android:id="@+id/calendarToJournalButton"
+                android:gravity="left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dip">
+            </ImageView>
+
+
+            <Button
+                android:id="@+id/selectedDayMonthYear"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </Button>
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/prev"
+                    android:id="@+id/prevMonth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </ImageView>
+                <Button
+                    android:id="@+id/currentMonth"
+                    android:layout_weight="0.6"
+                    android:textColor="#FFFFFF"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </Button>
+                <ImageView
+                    android:src="@drawable/next"
+                    android:id="@+id/nextMonth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </ImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:background="@drawable/header"
+                    android:id="@+id/calendarheader"
+                    android:layout_gravity="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp">
+                </ImageView>
+            </LinearLayout>
+
+            <GridView
+                android:id="@+id/calendar"
+                android:numColumns="7"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+            </GridView>
+
+        </LinearLayout>
+
+
+
+    <Button
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/back_buttom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/date_submit"
+        android:text="Next"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold"
+        android:textColor="#f58217"
+        android:background="@drawable/button_background3"
+        />
+
+    <ImageView
+        android:id="@+id/back_buttom"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background4"/>
+
+
+</RelativeLayout>

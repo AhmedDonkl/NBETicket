@@ -1,0 +1,72 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:background="@drawable/background2"
+    android:fillViewport="false"
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/nbelogo"
+        android:id="@+id/nbe_logo"/>
+
+    <TextView
+        android:background="@drawable/background3"
+        android:id="@+id/login_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nbe_logo"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="36dp"
+        android:text="Home"
+        android:textColor="#ffff971f" />
+
+    <RelativeLayout
+        android:layout_above="@+id/button_back"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/login_text"
+        android:layout_height="wrap_content"
+        >
+
+        <RelativeLayout
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/get_ticket"
+                android:id="@+id/getticket_bttn"
+                 />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/view_tickets"
+                android:id="@+id/viewticket_bttn"
+                android:layout_below="@+id/getticket_bttn"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/background4"
+        android:id="@+id/button_back"
+
+        />
+</RelativeLayout>
+
